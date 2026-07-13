@@ -1,0 +1,17 @@
+@extends('layouts.app')
+
+@section('content')
+    @include('partials.hero')
+    @include('partials.proyecto')
+    @include('partials.video')
+    @include('partials.primera-fase')
+    @include('partials.terrenos')
+    @include('partials.aspiracional')
+    @include('partials.financiamiento')
+    @include('partials.zona')
+    @include('partials.ubicacion')
+    @include('partials.galeria')
+    @include('partials.asesoria')
+    @include('partials.respaldo')
+    @include('partials.cta-final')
+@endsection

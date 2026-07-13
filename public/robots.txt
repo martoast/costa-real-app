@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://costa-real-rdm.netlify.app/sitemap.xml
