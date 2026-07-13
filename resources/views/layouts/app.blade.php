@@ -114,6 +114,19 @@
                 :class="navSolid || navOpen ? 'text-ink' : 'text-sand-50'"
                 aria-label="Costa Real — inicio"
             >
+                {{-- City logo — white asset that crossfades to dark on the solid nav,
+                     matching the Costa Real wordmark beside it. --}}
+                <img
+                    src="{{ asset('images/logo-city.png') }}"
+                    alt="City"
+                    class="h-9 w-auto shrink-0 transition-all duration-500 lg:h-10"
+                    :class="navSolid || navOpen ? '[filter:brightness(0)]' : ''"
+                >
+                {{-- Divider between the City mark and the Costa Real wordmark --}}
+                <span
+                    class="h-8 w-px shrink-0 transition-colors duration-500"
+                    :class="navSolid || navOpen ? 'bg-ink/15' : 'bg-sand-50/25'"
+                ></span>
                 @include('partials.logo', ['variant' => 'auto'])
             </a>
 
