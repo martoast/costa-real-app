@@ -13,7 +13,7 @@
     @php
         $siteUrl = rtrim(config('app.url'), '/');
         $metaTitle = $title ?? 'Costa Real · Real del Mar — Terrenos residenciales en la costa de Tijuana';
-        $metaDesc = $description ?? 'Costa Real: exclusivos terrenos desde 290 m² dentro de Real del Mar Residencial, con financiamiento directo, enganche del 25% y hasta 5 años de plazo. Construye tu residencia en la costa de Tijuana, rodeado de golf, hotel y amenidades.';
+        $metaDesc = $description ?? 'Costa Real: exclusivos terrenos desde 296 m² dentro de Real del Mar Residencial, con financiamiento directo, enganche del 25% y hasta 5 años de plazo. Construye tu residencia en la costa de Tijuana, rodeado de golf, hotel y amenidades.';
         $ogImage = $siteUrl . '/images/og-costa-real.jpg';
     @endphp
     <title>{{ $metaTitle }}</title>
@@ -21,7 +21,7 @@
     <meta name="keywords" content="Costa Real, Real del Mar, terrenos Tijuana, terrenos Rosarito, lotes residenciales, financiamiento directo, Grupo Frisa, terrenos frente al mar, terrenos con golf, invertir Baja California">
     <meta name="author" content="Real del Mar · Grupo Frisa">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#0a1a26">
+    <meta name="theme-color" content="#021637">
     <link rel="canonical" href="{{ $siteUrl }}/">
 
     {{-- Icons --}}
@@ -32,7 +32,7 @@
     {{-- Open Graph (WhatsApp, Facebook, iMessage, LinkedIn) — URLs must be absolute --}}
     <meta property="og:site_name" content="Costa Real">
     <meta property="og:title" content="Costa Real · Terrenos en Real del Mar">
-    <meta property="og:description" content="Exclusivos terrenos desde 290 m² dentro de Real del Mar Residencial, con financiamiento directo. Construye tu residencia en la costa de Tijuana.">
+    <meta property="og:description" content="Exclusivos terrenos desde 296 m² dentro de Real del Mar Residencial, con financiamiento directo. Construye tu residencia en la costa de Tijuana.">
     <meta property="og:image" content="{{ $ogImage }}">
     <meta property="og:image:secure_url" content="{{ $ogImage }}">
     <meta property="og:image:type" content="image/jpeg">
@@ -46,7 +46,7 @@
     {{-- Twitter / X card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Costa Real · Terrenos en Real del Mar">
-    <meta name="twitter:description" content="Terrenos desde 290 m² y $575 USD/m² dentro de Real del Mar, con financiamiento directo hasta 5 años.">
+    <meta name="twitter:description" content="Terrenos desde 296 m² y $575 USD/m² dentro de Real del Mar, con financiamiento directo hasta 5 años.">
     <meta name="twitter:image" content="{{ $ogImage }}">
     <meta name="twitter:image:alt" content="Costa Real — Real del Mar">
 
@@ -69,7 +69,7 @@
             'addressCountry' => 'MX',
         ],
         'developer' => ['@type' => 'Organization', 'name' => 'Real del Mar · Grupo Frisa'],
-        'broker' => ['@type' => 'RealEstateAgent', 'name' => 'Real del Mar', 'telephone' => '+52 664 631 3458', 'email' => 'ventas@realdelmar.com.mx'],
+        'broker' => ['@type' => 'RealEstateAgent', 'name' => 'Real del Mar', 'telephone' => '+52 664 115 8106', 'email' => 'ventas@cityinmobiliaria.mx'],
     ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
     </script>
 
@@ -84,9 +84,15 @@
     {{-- ============================== PRELOADER ============================== --}}
     <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-ocean-950">
         <div class="preloader-mark flex flex-col items-center text-sand-50">
-            @include('partials.logo')
+            <div class="flex items-center gap-[18px]">
+                <img src="{{ asset('images/city-logo-blanco.png') }}" alt="City Inmobiliaria"
+                    class="h-8 w-auto object-contain sm:h-9">
+                <span class="h-7 w-px shrink-0 bg-white/45 sm:h-8" aria-hidden="true"></span>
+                <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
+                    class="h-5 w-auto object-contain sm:h-6">
+            </div>
             <div class="mt-10 h-px w-44 overflow-hidden rounded-full bg-sand-50/15">
-                <div id="preloader-bar" class="h-full w-0 rounded-full bg-gold-400 transition-[width] duration-300 ease-out"></div>
+                <div id="preloader-bar" class="h-full w-0 rounded-full bg-city-light transition-[width] duration-300 ease-out"></div>
             </div>
             <p id="preloader-pct" class="eyebrow mt-4 text-[0.55rem] text-sand-200/50">0%</p>
         </div>
@@ -106,32 +112,34 @@
         class="fixed inset-x-0 top-0 z-50 transition-all duration-500"
         :class="navSolid || navOpen ? 'bg-sand-50/95 backdrop-blur-sm shadow-[0_1px_0_0_rgba(35,32,25,0.08)]' : 'bg-transparent'"
     >
-        <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+        <nav class="mx-auto flex max-w-7xl items-center gap-6 px-6 py-5 lg:gap-10 lg:px-10">
             {{-- Logo --}}
-            <a
-                href="#inicio"
-                class="group relative z-50 flex items-center gap-3 transition-colors duration-500"
-                :class="navSolid || navOpen ? 'text-ink' : 'text-sand-50'"
-                aria-label="Costa Real — inicio"
-            >
-                {{-- City logo — white asset that crossfades to dark on the solid nav,
-                     matching the Costa Real wordmark beside it. --}}
-                <img
-                    src="{{ asset('images/logo-city.png') }}"
-                    alt="City"
-                    class="h-9 w-auto shrink-0 transition-all duration-500 lg:h-10"
-                    :class="navSolid || navOpen ? '[filter:brightness(0)]' : ''"
+            <div class="flex shrink-0 justify-start">
+                <a
+                    href="#inicio"
+                    class="group relative z-50 flex shrink-0 items-center gap-3 sm:gap-[18px]"
+                    aria-label="City Inmobiliaria · Costa Real — inicio"
                 >
-                {{-- Divider between the City mark and the Costa Real wordmark --}}
-                <span
-                    class="h-8 w-px shrink-0 transition-colors duration-500"
-                    :class="navSolid || navOpen ? 'bg-ink/15' : 'bg-sand-50/25'"
-                ></span>
-                @include('partials.logo', ['variant' => 'auto'])
-            </a>
+                    {{-- City logo — white/azul crossfade on the solid nav --}}
+                    <span class="relative block">
+                        <img src="{{ asset('images/city-logo-blanco.png') }}" alt="City Inmobiliaria"
+                            class="block h-8 w-auto shrink-0 object-contain opacity-100 transition-opacity duration-500 sm:h-9 lg:h-10"
+                            :class="navSolid || navOpen ? 'opacity-0' : 'opacity-100'">
+                        <img src="{{ asset('images/city-logo-azul.png') }}" alt="City Inmobiliaria"
+                            class="absolute left-0 top-0 block h-8 w-auto shrink-0 object-contain opacity-0 transition-opacity duration-500 sm:h-9 lg:h-10"
+                            :class="navSolid || navOpen ? 'opacity-100' : 'opacity-0'">
+                    </span>
+                    {{-- Divider between the City mark and the Costa Real logo --}}
+                    <span class="h-7 w-px shrink-0 transition-colors duration-500 sm:h-8"
+                        :class="navSolid || navOpen ? 'bg-ink/20' : 'bg-white/45'"></span>
+                    <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
+                        class="block h-5 w-auto shrink-0 object-contain transition-[filter] duration-500 sm:h-6 lg:h-7"
+                        :class="navSolid || navOpen ? '[filter:brightness(0)]' : ''">
+                </a>
+            </div>
 
             {{-- Desktop links — centered in the navbar --}}
-            <div class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-5 lg:flex xl:gap-10">
+            <div class="hidden flex-1 items-center justify-center gap-5 lg:flex xl:gap-6">
                 @foreach ($navLinks as $item)
                     <a
                         href="{{ $item['href'] }}"
@@ -141,23 +149,25 @@
                 @endforeach
             </div>
 
-            {{-- CTA (right) --}}
-            <a
-                href="#contacto"
-                class="eyebrow z-50 hidden whitespace-nowrap rounded-full px-4 py-2.5 text-[0.65rem] text-sand-50 transition-all duration-300 bg-gold-500 hover:bg-gold-400 lg:inline-flex xl:px-5"
-            ><span class="hidden xl:inline">Solicitar información</span><span class="xl:hidden">Contacto</span></a>
+            {{-- CTA + hamburger (right) --}}
+            <div class="ml-auto flex shrink-0 items-center justify-end">
+                <a
+                    href="#contacto"
+                    class="eyebrow z-50 hidden whitespace-nowrap rounded-full px-4 py-2.5 text-[0.65rem] text-sand-50 transition-all duration-300 bg-gold-500 hover:bg-gold-400 lg:inline-flex xl:px-5"
+                ><span class="hidden xl:inline">Solicitar información</span><span class="xl:hidden">Contacto</span></a>
 
-            {{-- Mobile hamburger --}}
-            <button
-                class="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
-                @click="navOpen = !navOpen"
-                aria-label="Menú"
-            >
-                <span class="block h-px w-6 transition-all duration-300"
-                    :class="[navOpen ? 'translate-y-[3.5px] rotate-45' : '', navSolid || navOpen ? 'bg-ink' : 'bg-sand-50']"></span>
-                <span class="block h-px w-6 transition-all duration-300"
-                    :class="[navOpen ? '-translate-y-[3.5px] -rotate-45' : '', navSolid || navOpen ? 'bg-ink' : 'bg-sand-50']"></span>
-            </button>
+                {{-- Mobile hamburger --}}
+                <button
+                    class="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+                    @click="navOpen = !navOpen"
+                    aria-label="Menú"
+                >
+                    <span class="block h-px w-6 transition-all duration-300"
+                        :class="[navOpen ? 'translate-y-[3.5px] rotate-45' : '', navSolid || navOpen ? 'bg-ink' : 'bg-sand-50']"></span>
+                    <span class="block h-px w-6 transition-all duration-300"
+                        :class="[navOpen ? '-translate-y-[3.5px] -rotate-45' : '', navSolid || navOpen ? 'bg-ink' : 'bg-sand-50']"></span>
+                </button>
+            </div>
         </nav>
 
         {{-- Mobile menu --}}
@@ -188,7 +198,13 @@
             <div class="grid gap-12 md:grid-cols-3">
                 {{-- Brand + address --}}
                 <div class="text-sand-50">
-                    @include('partials.logo')
+                    <div class="flex items-center gap-[18px]">
+                        <img src="{{ asset('images/city-logo-blanco.png') }}" alt="City Inmobiliaria"
+                            class="h-8 w-auto object-contain sm:h-9">
+                        <span class="h-7 w-px shrink-0 bg-white/45 sm:h-8" aria-hidden="true"></span>
+                        <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
+                            class="h-5 w-auto object-contain sm:h-6">
+                    </div>
                     <p class="mt-6 max-w-xs text-sm leading-relaxed text-sand-200/70">
                         Dentro de Real del Mar.<br>
                         Km. 19.5, Escénica Tijuana–Rosarito,<br>
@@ -208,7 +224,6 @@
                         <li><a href="#financiamiento" class="transition-colors hover:text-gold-300">Financiamiento directo</a></li>
                         <li><a href="#zona" class="transition-colors hover:text-gold-300">Entorno Real del Mar</a></li>
                         <li><a href="#ubicacion" class="transition-colors hover:text-gold-300">Ubicación</a></li>
-                        <li><a href="#galeria" class="transition-colors hover:text-gold-300">Galería</a></li>
                     </ul>
                 </div>
 
@@ -217,30 +232,30 @@
                     <p class="eyebrow mb-5 text-[0.6rem] text-gold-300">Contacto</p>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="https://wa.me/526646313458" target="_blank" rel="noopener" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
+                            <a href="https://wa.me/526641158106" target="_blank" rel="noopener" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
                                 <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-                                WhatsApp · 664 631 3458
+                                WhatsApp · 664-115-8106
                             </a>
                         </li>
                         <li>
-                            <a href="tel:+526646313458" onclick="if(window.fbq)fbq('track','Contact',{method:'call'})" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
+                            <a href="tel:6641158106" onclick="if(window.fbq)fbq('track','Contact',{method:'call'})" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
                                 <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
-                                Llamar · 664 631 3458
+                                Llamar · 664-115-8106
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:ventas@realdelmar.com.mx" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
+                            <a href="mailto:ventas@cityinmobiliaria.mx" class="inline-flex items-center gap-2 transition-colors hover:text-gold-300">
                                 <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6.24l8 5 8-5v2z"/></svg>
-                                ventas@realdelmar.com.mx
+                                ventas@cityinmobiliaria.mx
                             </a>
                         </li>
                     </ul>
-                    <a href="#contacto" class="eyebrow mt-7 inline-flex items-center justify-center rounded-full bg-gold-500 px-7 py-3.5 text-[0.65rem] text-sand-50 transition-colors hover:bg-gold-400">Agendar asesoría</a>
+                    <a href="#contacto" class="eyebrow mt-7 inline-flex items-center justify-center rounded-full bg-city-light px-7 py-3.5 text-[0.65rem] text-city-blue transition-colors hover:bg-city-white">Agendar asesoría</a>
                 </div>
             </div>
 
             <div class="mt-14 border-t border-sand-50/10 pt-8 text-xs leading-relaxed text-sand-200/50">
-                <p>© {{ date('Y') }} Costa Real · Real del Mar. Todos los derechos reservados. · Aviso de Privacidad <span class="text-sand-200/30">· v1.0.2</span></p>
+                <p>© {{ date('Y') }} Costa Real · Real del Mar. Todos los derechos reservados. · Aviso de Privacidad <span class="text-sand-200/30">· v1.0.3</span></p>
                 <p class="mt-2">
                     Las imágenes mostradas son representaciones ilustrativas del proyecto y pueden variar respecto al producto final.
                     La información de medidas, precios, condiciones de financiamiento y disponibilidad está sujeta a cambios sin previo aviso.
@@ -251,9 +266,9 @@
 
     {{-- ============================== FLOATING ACTIONS ============================== --}}
     @php
-        // Real del Mar — +52 664 631 3458
-        $waNumber = '526646313458';
-        $telNumber = '+526646313458';
+        // City Inmobiliaria — 664 115 8106
+        $waNumber = '526641158106';
+        $telNumber = '6641158106';
         $mapsUrl = 'https://maps.google.com/?q=Real+del+Mar+Km+19.5+Escenica+Tijuana+Rosarito';
         $waText = rawurlencode('Hola, me interesa Costa Real. ¿Me pueden enviar el inventario de terrenos disponibles?');
     @endphp

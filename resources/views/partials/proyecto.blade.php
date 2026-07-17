@@ -5,14 +5,14 @@
             {{-- Text --}}
             <div class="reveal-group">
                 <p class="eyebrow text-gold-500">Conoce Costa Real</p>
-                <h2 class="display mt-5 text-4xl font-light text-ink sm:text-5xl">Terrenos residenciales dentro de <span class="accent-italic">Real del Mar</span></h2>
+                <h2 class="display mt-5 text-4xl font-light text-ink sm:text-5xl">Terrenos residenciales con <span class="accent-italic">financiamiento directo</span></h2>
                 <p class="mt-6 text-lg leading-relaxed text-ink-soft">
-                    Costa Real es una oportunidad para construir tu residencia dentro de Real del Mar, una comunidad consolidada que integra ubicación, entorno natural, servicios, amenidades y estilo de vida. Con terrenos desde 290 m², está diseñado para quienes buscan invertir en patrimonio dentro de un residencial privado con acceso a todo lo necesario para vivir, descansar y disfrutar.
+                    Terrenos desde 296 m² con financiamiento directo de hasta 5 años, en una ubicación privilegiada dentro de Real del Mar.
                 </p>
 
-                <dl class="mt-10 grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4">
+                <dl class="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4">
                     @foreach ([
-                        ['n' => '290', 'l' => 'm² desde'],
+                        ['n' => '296', 'l' => 'm² desde'],
                         ['n' => '$575', 'l' => 'USD por m²'],
                         ['n' => '25%', 'l' => 'Enganche'],
                         ['n' => '5', 'l' => 'Años de financiamiento'],
@@ -24,16 +24,11 @@
                     @endforeach
                 </dl>
 
-                <ul class="mt-8 flex flex-wrap gap-2.5">
-                    @foreach (['Dentro de Real del Mar', 'Financiamiento directo', 'Primera fase en venta', 'Entorno consolidado'] as $tag)
-                        <li class="rounded-full bg-olive-500/10 px-4 py-2 text-xs font-medium text-olive-700">{{ $tag }}</li>
-                    @endforeach
-                </ul>
             </div>
 
             {{-- Image --}}
             <div class="reveal overflow-hidden rounded-3xl shadow-xl shadow-ink/10">
-                <img src="{{ asset('images/costa-panorama.jpg') }}" alt="Vista panorámica de Costa Real en Real del Mar" loading="lazy"
+                <img src="{{ asset('images/costa-campo-golf.jpg') }}" alt="Campo de golf en Costa Real · Real del Mar" loading="lazy"
                     class="aspect-[4/3] w-full object-cover">
             </div>
         </div>

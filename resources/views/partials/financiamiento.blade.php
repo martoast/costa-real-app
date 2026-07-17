@@ -9,7 +9,7 @@
         <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             @foreach ([
                 ['n' => '$575', 'u' => 'USD/m²', 'l' => 'Precio desde'],
-                ['n' => '290', 'u' => 'm²', 'l' => 'Terrenos desde'],
+                ['n' => '296', 'u' => 'm²', 'l' => 'Terrenos desde'],
                 ['n' => '25%', 'u' => 'de enganche', 'l' => 'Para apartar tu lote'],
                 ['n' => '5', 'u' => 'años', 'l' => 'Financiamiento directo hasta'],
                 ['n' => '24', 'u' => 'meses sin intereses', 'l' => 'Primeros pagos'],
@@ -26,7 +26,7 @@
         <p class="reveal mt-10 text-center text-sm text-sand-200/70">Consulta disponibilidad, medidas y condiciones actualizadas con nuestro equipo de ventas.</p>
         <p class="reveal mt-3 text-center text-xs text-sand-200/45">Precios y condiciones sujetos a cambio sin previo aviso.</p>
         <div class="reveal mt-8 text-center">
-            <a href="#contacto" class="eyebrow inline-flex items-center justify-center rounded-full bg-gold-500 px-8 py-4 text-[0.7rem] text-sand-50 transition-colors hover:bg-gold-400">Solicitar plan de pago</a>
+            <a href="#contacto" class="eyebrow inline-flex items-center justify-center rounded-full bg-city-light px-8 py-4 text-[0.7rem] text-city-blue transition-colors hover:bg-city-white">Solicitar plan de pago</a>
         </div>
     </div>
 </section>

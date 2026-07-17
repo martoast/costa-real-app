@@ -110,39 +110,44 @@
     --font-delight: 'Delight', ui-sans-serif, system-ui, sans-serif;
 
     /* Sand / travertine — page backgrounds */
-    --color-sand-50: #faf8f4;
-    --color-sand-100: #f4f0e7;
-    --color-sand-200: #e9e1d2;
+    --color-sand-50: #fff;
+    --color-sand-100: #c0e1ff;
+    --color-sand-200: #e1effb;
     --color-sand-300: #d9cbb2;
     --color-sand-400: #c3ab85;
 
     /* Pacific ocean — accents, dark bands, footer */
     --color-ocean-300: #8fb3c2;
-    --color-ocean-400: #5e8fa3;
+    --color-ocean-400: #3f6fb0;
     --color-ocean-600: #33647d;
     --color-ocean-800: #1a3a4d;
-    --color-ocean-900: #0f2533;
-    --color-ocean-950: #0a1a26;
+    --color-ocean-900: #041d42;
+    --color-ocean-950: #021637;
 
     /* Teja / terracotta — the single warm accent (CTAs only) */
     --color-terra-300: #ddab87;
-    --color-terra-400: #cd8257;
+    --color-terra-400: #1f4c8c;
     --color-terra-500: #b9663a;
     --color-terra-600: #9d5230;
 
     /* Stone & oak — supporting neutrals */
-    --color-stone-warm: #a39a8b;
+    --color-stone-warm: #9aa7b5;
     --color-oak: #9c7a52;
 
     /* Olive / verde olivo — natural, golf & landscape accents */
     --color-olive-300: #b6b78c;
-    --color-olive-500: #7d7f54;
-    --color-olive-700: #565838;
+    --color-olive-500: #3f6fb0;
+    --color-olive-700: #0e2f66;
 
     /* Soft gold — refined CTA / detail accents */
-    --color-gold-300: #e2caa0;
-    --color-gold-400: #cdab74;
-    --color-gold-500: #b6914f;
+    --color-gold-300: #c0e1ff;
+    --color-gold-400: #1f4c8c;
+    --color-gold-500: #021637;
+
+    /* City Inmobiliaria — co-branding */
+    --color-city-blue: #021637;
+    --color-city-light: #c0e1ff;
+    --color-city-white: #fff;
 
     /* Madera / wood & warm beige tones */
     --color-wood: #8a6a45;

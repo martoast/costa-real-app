@@ -1,5 +1,5 @@
 {{-- ============================== CONTACTO ============================== --}}
-<section id="contacto" class="bg-beige py-24 lg:py-32"
+<section id="contacto" class="bg-sand-50 py-24 lg:py-32"
     x-data="{
         sending: false,
         sent: false,
@@ -55,7 +55,7 @@
                 <button type="submit" :disabled="sending"
                     class="eyebrow flex-1 rounded-full bg-gold-500 px-8 py-4 text-[0.7rem] text-sand-50 transition-colors hover:bg-gold-400 disabled:cursor-wait disabled:opacity-60"
                     x-text="sending ? 'Enviando…' : 'Enviar solicitud'">Enviar solicitud</button>
-                <a href="tel:+526646313458" onclick="if(window.fbq)fbq('track','Contact',{method:'call'})"
+                <a href="tel:6641158106" onclick="if(window.fbq)fbq('track','Contact',{method:'call'})"
                     class="eyebrow flex flex-1 items-center justify-center gap-2 rounded-full border border-ink/20 px-8 py-4 text-[0.7rem] text-ink transition-colors hover:border-ink hover:bg-ink hover:text-sand-50">
                     <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
                     Llamar

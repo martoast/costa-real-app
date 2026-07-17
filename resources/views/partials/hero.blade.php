@@ -22,7 +22,6 @@
         </p>
         <h1 class="display mt-2 text-4xl font-light uppercase tracking-[0.02em] leading-[1.06] text-sand-50 drop-shadow-[0_2px_28px_rgba(10,26,38,0.7)] sm:text-5xl lg:whitespace-nowrap lg:text-7xl">
             Costa Real
-            <span class="mt-1 block text-3xl font-light tracking-[0.08em] text-gold-300 sm:text-4xl lg:text-5xl">Primera fase</span>
         </h1>
         <p class="mx-auto mt-5 max-w-md text-sm leading-relaxed text-sand-100/90 drop-shadow-[0_2px_16px_rgba(10,26,38,0.7)] sm:max-w-xl sm:text-base">
             Construye tu residencia dentro de una de las comunidades más completas de la costa de Tijuana.

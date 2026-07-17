@@ -3,8 +3,8 @@
     $terrenos = [
         [
             'nombre' => 'Lote residencial',
-            'img' => 'costa-enero.jpg',
-            'specs' => ['Desde 290 m²', 'Desde $575 USD/m²', 'Uso residencial', 'Primera fase', 'Dentro de Real del Mar', 'Financiamiento directo'],
+            'img' => 'costa-real-delimitada.jpg',
+            'specs' => ['Desde 296 m²', 'Desde $575 USD/m²', 'Uso residencial', 'Primera fase', 'Dentro de Real del Mar', 'Financiamiento directo'],
             'texto' => 'Elige tu ubicación dentro de la primera fase y construye una residencia a la medida de tu proyecto de vida: una casa familiar, una inversión a futuro o un espacio diseñado por ti dentro de Real del Mar.',
         ],
     ];
@@ -14,7 +14,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-10">
         <div class="reveal-group max-w-2xl">
             <p class="eyebrow text-gold-500">Terrenos destacados</p>
-            <h2 class="display mt-5 text-4xl font-light text-ink sm:text-5xl">Un terreno para construir más que <span class="accent-italic">una casa</span></h2>
+            <h2 class="display mt-5 text-4xl font-light text-ink sm:text-5xl">Terreno listo <span class="accent-italic">para construir</span></h2>
         </div>
 
         <div class="mt-14 grid gap-8">
@@ -22,8 +22,7 @@
                 <article class="reveal group mx-auto w-full max-w-2xl overflow-hidden rounded-3xl bg-white shadow-lg shadow-ink/5 ring-1 ring-ink/5">
                     <div class="relative overflow-hidden">
                         <img src="{{ asset('images/' . $t['img']) }}" alt="{{ $t['nombre'] }} — Costa Real" loading="lazy"
-                            class="aspect-[16/10] w-full object-cover object-[center_78%] transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-                        <span class="absolute left-5 top-5 rounded-full bg-ocean-950/70 px-4 py-1.5 text-xs font-medium text-sand-50 backdrop-blur-sm">Primera fase</span>
+                            class="aspect-[16/10] w-full object-cover object-[center_88%] transition-transform duration-[1.2s] ease-out group-hover:scale-105">
                     </div>
                     <div class="p-8">
                         <h3 class="display text-3xl font-light text-ink">{{ $t['nombre'] }}</h3>
