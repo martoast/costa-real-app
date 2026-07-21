@@ -84,12 +84,9 @@
     {{-- ============================== PRELOADER ============================== --}}
     <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-ocean-950">
         <div class="preloader-mark flex flex-col items-center text-sand-50">
-            <div class="flex items-center gap-[18px]">
+            <div class="flex items-center">
                 <img src="{{ asset('images/city-logo-blanco.png') }}" alt="City Inmobiliaria"
                     class="h-8 w-auto object-contain sm:h-9">
-                <span class="h-7 w-px shrink-0 bg-white/45 sm:h-8" aria-hidden="true"></span>
-                <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
-                    class="h-5 w-auto object-contain sm:h-6">
             </div>
             <div class="mt-10 h-px w-44 overflow-hidden rounded-full bg-sand-50/15">
                 <div id="preloader-bar" class="h-full w-0 rounded-full bg-city-light transition-[width] duration-300 ease-out"></div>
@@ -117,8 +114,8 @@
             <div class="flex shrink-0 justify-start">
                 <a
                     href="#inicio"
-                    class="group relative z-50 flex shrink-0 items-center gap-3 sm:gap-[18px]"
-                    aria-label="City Inmobiliaria · Costa Real — inicio"
+                    class="group relative z-50 flex shrink-0 items-center"
+                    aria-label="City Inmobiliaria — inicio"
                 >
                     {{-- City logo — white/azul crossfade on the solid nav --}}
                     <span class="relative block">
@@ -129,12 +126,6 @@
                             class="absolute left-0 top-0 block h-8 w-auto shrink-0 object-contain opacity-0 transition-opacity duration-500 sm:h-9 lg:h-10"
                             :class="navSolid || navOpen ? 'opacity-100' : 'opacity-0'">
                     </span>
-                    {{-- Divider between the City mark and the Costa Real logo --}}
-                    <span class="h-7 w-px shrink-0 transition-colors duration-500 sm:h-8"
-                        :class="navSolid || navOpen ? 'bg-ink/20' : 'bg-white/45'"></span>
-                    <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
-                        class="block h-5 w-auto shrink-0 object-contain transition-[filter] duration-500 sm:h-6 lg:h-7"
-                        :class="navSolid || navOpen ? '[filter:brightness(0)]' : ''">
                 </a>
             </div>
 
@@ -250,7 +241,7 @@
                             </a>
                         </li>
                     </ul>
-                    <a href="#contacto" class="eyebrow mt-7 inline-flex items-center justify-center rounded-full bg-city-light px-7 py-3.5 text-[0.65rem] text-city-blue transition-colors hover:bg-city-white">Agendar asesoría</a>
+                    <a href="#contacto" class="eyebrow mt-7 inline-flex items-center justify-center rounded-full bg-city-white px-7 py-3.5 text-[0.65rem] text-city-blue transition-colors hover:bg-sand-200">Agendar asesoría</a>
                 </div>
             </div>
 

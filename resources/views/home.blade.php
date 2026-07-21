@@ -6,7 +6,6 @@
     @include('partials.video')
     @include('partials.financiamiento')
     @include('partials.ubicacion')
-    @include('partials.aspiracional')
     @include('partials.primera-fase')
     @include('partials.zona')
     @include('partials.terrenos')

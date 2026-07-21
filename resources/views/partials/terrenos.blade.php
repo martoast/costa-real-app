@@ -10,7 +10,7 @@
     ];
 @endphp
 
-<section id="terrenos" class="bg-sand-100 py-24 lg:py-32">
+<section id="terrenos" class="bg-sand-50 py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-10">
         <div class="reveal-group max-w-2xl">
             <p class="eyebrow text-gold-500">Terrenos destacados</p>

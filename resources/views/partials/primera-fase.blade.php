@@ -12,7 +12,7 @@
             <p class="mt-6 text-lg leading-relaxed text-sand-100/90 drop-shadow-[0_2px_18px_rgba(10,26,38,0.55)]">
                 Todos los terrenos se entregan urbanizados y con servicios.
             </p>
-            <a href="#terrenos" class="eyebrow mt-8 inline-flex items-center justify-center rounded-full bg-city-light px-8 py-4 text-[0.7rem] text-city-blue transition-colors hover:bg-city-white">Ver terrenos</a>
+            <a href="#terrenos" class="eyebrow mt-8 inline-flex items-center justify-center rounded-full bg-city-white px-8 py-4 text-[0.7rem] text-city-blue transition-colors hover:bg-sand-200">Ver terrenos</a>
         </div>
     </div>
 </section>

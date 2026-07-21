@@ -1,5 +1,5 @@
 {{-- ============================== UBICACIÓN ============================== --}}
-<section id="ubicacion" class="bg-city-light py-24 text-ink lg:py-32">
+<section id="ubicacion" class="bg-sand-50 py-24 text-ink lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-10">
         <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {{-- Text --}}

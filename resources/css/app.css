@@ -111,8 +111,8 @@
 
     /* Sand / travertine — page backgrounds */
     --color-sand-50: #fff;
-    --color-sand-100: #c0e1ff;
-    --color-sand-200: #e1effb;
+    --color-sand-100: #ffffff;
+    --color-sand-200: #eae7e1;
     --color-sand-300: #d9cbb2;
     --color-sand-400: #c3ab85;
 
@@ -140,13 +140,13 @@
     --color-olive-700: #0e2f66;
 
     /* Soft gold — refined CTA / detail accents */
-    --color-gold-300: #c0e1ff;
+    --color-gold-300: #ffffff;
     --color-gold-400: #1f4c8c;
     --color-gold-500: #021637;
 
     /* City Inmobiliaria — co-branding */
     --color-city-blue: #021637;
-    --color-city-light: #c0e1ff;
+    --color-city-light: #ffffff;
     --color-city-white: #fff;
 
     /* Madera / wood & warm beige tones */
