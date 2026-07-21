@@ -84,9 +84,12 @@
     {{-- ============================== PRELOADER ============================== --}}
     <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-ocean-950">
         <div class="preloader-mark flex flex-col items-center text-sand-50">
-            <div class="flex items-center">
+            <div class="flex items-center gap-[18px]">
                 <img src="{{ asset('images/city-logo-blanco.png') }}" alt="City Inmobiliaria"
                     class="h-8 w-auto object-contain sm:h-9">
+                <span class="h-7 w-px shrink-0 bg-white/45 sm:h-8" aria-hidden="true"></span>
+                <img src="{{ asset('images/costa-real-logo.png') }}" alt="Costa Real"
+                    class="h-5 w-auto object-contain sm:h-6">
             </div>
             <div class="mt-10 h-px w-44 overflow-hidden rounded-full bg-sand-50/15">
                 <div id="preloader-bar" class="h-full w-0 rounded-full bg-city-light transition-[width] duration-300 ease-out"></div>
